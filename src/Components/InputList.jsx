@@ -35,10 +35,7 @@ const InputList = () => {
     };
 
     const removeTask = (id) => {
-        const newTasks = [...tasks];
-
-        newTasks.splice(id, 1);
-        setTasks(newTasks);
+        setTasks(tasks.filter((task, index) => index !== id));
     };
 
     if (tasks.length === 0) {

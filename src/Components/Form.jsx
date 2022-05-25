@@ -25,7 +25,7 @@ const Form = () => {
             p={6}
             position="absolute"
             right="0"
-            top="350px"
+            top="250px"
         >
             <Stack
                 bgColor={inputColorMode}

@@ -26,6 +26,8 @@ const Header = () => {
                 direction={"row"}
                 justifyContent="space-around"
                 padding={6}
+                position={"absolute"}
+                top={"90px"}
                 width="100%"
             >
                 <Text as="h1" fontSize="xl" fontWeight="bold">
