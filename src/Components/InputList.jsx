@@ -23,15 +23,15 @@ const InputList = () => {
     const { tasks, setTasks } = useContext(DataContext);
 
     const toggleComplete = (id) => {
-        const newTasks = [...tasks];
+        setTasks(
+            tasks.map((task, index) => {
+                if (index === id) {
+                    task.completed = !task.completed;
+                }
 
-        newTasks.forEach((task, index) => {
-            if (index === id) {
-                task.completed = !task.completed;
-            }
-        });
-
-        setTasks(newTasks);
+                return task;
+            }),
+        );
     };
 
     const removeTask = (id) => {
